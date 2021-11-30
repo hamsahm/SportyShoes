@@ -3,3 +3,8 @@ INSERT INTO PERSON (id, username, password, is_registered) VALUES
 (20, 'User20', 'User20@1234', true),
 (30, 'User30', 'User30@1234', true),
 (40, 'User40', 'User40@1234', false);
+
+INSERT INTO CATEGORY (id, name) VALUES 
+(10, 'Kids'),
+(20, 'Men'),
+(30, 'Women');
