@@ -8,3 +8,8 @@ INSERT INTO CATEGORY (id, name) VALUES
 (10, 'Kids'),
 (20, 'Men'),
 (30, 'Women');
+
+INSERT INTO PRODUCT (id, name, size, category_id, price, is_available) VALUES 
+(10, 'Adidas Shoes', '7', 20,'500', true ),
+(20, 'Sketchers', '4', 10, '1000', false),
+(30, 'Nike', '6', 30, 600, true);
