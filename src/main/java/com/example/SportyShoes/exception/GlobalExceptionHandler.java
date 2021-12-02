@@ -16,4 +16,9 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<String>(userNotFoundException.getMessage(), HttpStatus.NOT_FOUND);
 	}
 
+	@ExceptionHandler(InvalidDateFormatException.class)
+	public ResponseEntity<String> handle(InvalidDateFormatException invalidDateFormatException, WebRequest webRequest) {
+		return new ResponseEntity<String>(invalidDateFormatException.getMessage(), HttpStatus.NOT_FOUND);
+	}
+
 }
